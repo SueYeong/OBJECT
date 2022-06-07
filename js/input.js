@@ -17,5 +17,12 @@
         commentWrapEl.appendChild(hEl)
     }
 
+    const con_wrapEl = document.querySelector('.con_wrap')
+    const closebtn = document.querySelector('.close_btn')
+
+    const handleClick_1 = () => {
+        con_wrapEl.classList.toggle('none')
+    }
+    closebtn.addEventListener('click', handleClick_1)
     formEl.addEventListener('submit', handleClick)
 })()
